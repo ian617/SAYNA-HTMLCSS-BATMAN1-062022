@@ -81,3 +81,11 @@ ul a:hover {
     background-repeat: no-repeat;
     background-color: #19587D;
 }
+
+
+/* Design de la section batman-personnages */
+
+.batman-personnages {
+    display: flex;
+    justify-content: space-between;
+}
