@@ -1,1 +1,83 @@
-img {}
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@font-face {
+    font-family: 'rajdhani';
+    src: url(../Assets/Police/Rajdhani-Medium.ttf);
+}
+
+:root {
+    --yellow-color: #FFFF00;
+    --yellow-light: #F8F184;
+    --blue-color: #19587D;
+    --red-color: #b11313;
+    --black-light: #0d0e09;
+    --grey: #c4c4c4;
+    --black-color: #000;
+    --white-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'rajdhani';
+    font-size: 36px;
+    font-weight: 400;
+}
+
+button {
+    font-family: 'rajdhani';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'space-grotesk';
+    font-weight: 300;
+}
+
+
+/* Design de la navigation */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 300px;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul li a {
+    color: var(--white-color);
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'rajdhani';
+}
+
+ul a:hover {
+    color: var(--yellow-color);
+}
+
+
+/* Design de la partie hero header */
+
+#hero {
+    background-image: url(../Assets/Illustrations/Bathome1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #19587D;
+}
