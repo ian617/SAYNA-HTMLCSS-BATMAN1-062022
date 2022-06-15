@@ -13,6 +13,8 @@
     --grey: #c4c4c4;
     --black-color: #000;
     --white-color: #fff;
+    --gradient-white: #eddebf4f;
+    --grandient-red: #89000956;
 }
 
 * {
@@ -41,7 +43,7 @@ button {
 body {
     background-color: black;
     color: white;
-    font-family: 'space-grotesk';
+    font-family: 'space grotesk';
     font-weight: 300;
 }
 
@@ -53,7 +55,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding-top: 50px;
-    padding-bottom: 300px;
+    padding-bottom: 250px;
 }
 
 ul {
@@ -80,6 +82,43 @@ ul a:hover {
     background-position: top center;
     background-repeat: no-repeat;
     background-color: #19587D;
+    background-size: cover;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    /* L'élément va occuper 60% de l'écran et s'aligner à gauche */
+    margin: 0 auto;
+    /* Pour centrer l'élément */
+}
+
+#hero .titre {
+    margin: 20px 0;
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 20px;
+    padding: 10px 30px;
+    margin: 20px;
+    background: linear-gradient( 80deg, var(--gradient-white), var(--grandient-red));
+    /* Ajout de dégradé.
+    Pour ajouter rapidement l'opacité, vas vers les rgb de var (cf root en haut) */
+    box-shadow: var(--black-color) 5px 5px 60px;
+    /* 60px ici c'est le "blur" des ombres de 5px ajoutés */
+}
+
+#hero .flèche {
+    display: block;
+    /* Parce que le display est inline par défaut */
+    margin: 0 auto;
+    /* pour centrer l'élément */
+    margin-top: 290px;
 }
 
 
