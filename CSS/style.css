@@ -49,6 +49,12 @@
         font-family: 'space grotesk';
         font-weight: 300;
     }
+    /* Ajout filtre jaune pour que l'image adopte une couleur jaune au survol de souris 
+    Vas sur le générateur de filtre https://angel-rs.github.io/css-color-filter-generator */
+    
+    .filtre-jaune:hover {
+        filter: brightness(0) saturate(100%) invert(92%) sepia(93%) saturate(1083%) hue-rotate(360deg) brightness(110%) contrast(102%);
+    }
     /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
                 Design de la navigation 
  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -70,10 +76,12 @@
         font-size: 30px;
         font-weight: 500;
         font-family: 'rajdhani';
+        text-decoration: none;
     }
     
-    ul a:hover {
-        color: var(--yellow-color);
+    .menu:hover {
+        text-decoration: underline;
+        font-weight: 700;
     }
     /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
                 Design de la partie hero header 
@@ -104,7 +112,7 @@
 } */
     
     #il_est_batman {
-        margin: 20px 0;
+        margin: 30px 0;
         font-size: 25px;
     }
     
@@ -112,13 +120,18 @@
         text-decoration: none;
         color: var(--white-color);
         font-size: 20px;
-        padding: 10px 30px;
+        padding: 20px 30px;
         margin: 20px;
         background: linear-gradient( 80deg, var(--gradient-white), var(--grandient-red));
         /* Ajout de dégradé.
     Pour ajouter rapidement l'opacité, on peut aller vers les rgb (cf root en haut) */
         box-shadow: var(--black-color) 5px 5px 60px;
         /* 60px ici c'est le "blur" des ombres de 5px ajoutées */
+    }
+    
+    .btn:hover {
+        background: linear-gradient(80deg, rgba(237, 222, 191, 1), rgba(137, 0, 8, 1));
+        /* Au passage de la souris, l'opacité passe à 100% */
     }
     
     #hero .flèche {
@@ -159,21 +172,30 @@
     text-transform: uppercase;
 } */
     
+    #batman-cinema {
+        margin-top: 150px;
+    }
+    
     .titre {
         text-transform: uppercase;
-        margin: 30px 0;
+        margin: 150px 0px 20px 0px;
     }
     
     .description {
         margin-bottom: 45px;
         text-align: justify;
-        width: 80%;
-        /* largeur de 80% du conteneur */
+        width: 90%;
+        /* largeur de 90% du conteneur */
         font-size: 20px;
     }
     
     .acteurs {
         text-align: center;
+    }
+    
+    .batman-item:hover {
+        transform: scale(1.1);
+        /* Zoom de 10% au survol de la souris */
     }
     /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
                 Design de la partie multimédia
@@ -182,6 +204,7 @@
     #multimedia .slider-multimedia {
         display: flex;
         width: 60%;
+        max-width: 550px;
         margin: 40px auto;
     }
     
