@@ -13,14 +13,17 @@
     --grey: #c4c4c4;
     --black-color: #000;
     --white-color: #fff;
-    --gradient-white: #eddebf4f;
-    --grandient-red: #89000956;
+    --gradient-white: rgba(237, 222, 191, 0.4);
+    --grandient-red: rgba(137, 0, 8, 0.6);
+    --gradient-blue: #19587d;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* Pour enlever les marges et les padding par défaut 
+    et ne pas compliquer mes calculs pour le positionnement des différents éléments */
 }
 
 h1 {
@@ -48,7 +51,9 @@ body {
 }
 
 
-/* Design de la navigation */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+                Design de la navigation 
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 nav {
     display: flex;
@@ -74,7 +79,9 @@ ul a:hover {
 }
 
 
-/* Design de la partie hero header */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+                Design de la partie hero header 
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 #hero {
     background-image: url(../Assets/Illustrations/Bathome1.png);
@@ -96,8 +103,15 @@ ul a:hover {
     /* Pour centrer l'élément */
 }
 
+
+/* Quand la classe "titre" a été ajouté au h2
 #hero .titre {
     margin: 20px 0;
+} */
+
+#il_est_batman {
+    margin: 20px 0;
+    font-size: 25px;
 }
 
 .btn {
@@ -108,9 +122,9 @@ ul a:hover {
     margin: 20px;
     background: linear-gradient( 80deg, var(--gradient-white), var(--grandient-red));
     /* Ajout de dégradé.
-    Pour ajouter rapidement l'opacité, vas vers les rgb de var (cf root en haut) */
+    Pour ajouter rapidement l'opacité, on peut aller vers les rgb (cf root en haut) */
     box-shadow: var(--black-color) 5px 5px 60px;
-    /* 60px ici c'est le "blur" des ombres de 5px ajoutés */
+    /* 60px ici c'est le "blur" des ombres de 5px ajoutées */
 }
 
 #hero .flèche {
@@ -121,10 +135,77 @@ ul a:hover {
     margin-top: 290px;
 }
 
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 50px;
+    /* Position de l'élément par rapport au côté droit */
+    top: 250px;
+}
 
-/* Design de la section batman-personnages */
+.scroll .social {
+    margin-top: 25px;
+}
 
-.batman-personnages {
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+                Design de la section batman-personnages 
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* Dans webinar:
+#batman-cinema {
+    margin-top: 40px;
+}  */
+
+.batman-personnage {
     display: flex;
     justify-content: space-between;
+}
+
+
+/* Pour écrire le titre en majuscule
+#batman-cinema .titre {
+    text-transform: uppercase;
+} */
+
+.titre {
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+.description {
+    margin-bottom: 45px;
+    text-align: justify;
+    width: 80%;
+    /* largeur de 80% du conteneur */
+    font-size: 20px;
+}
+
+.acteurs {
+    text-align: center;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+                Design de la partie multimédia
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+#multimedia .slider-multimedia {
+    display: flex;
+    width: 60%;
+    margin: 40px auto;
+}
+
+#multimedia .slider-image {
+    width: 100%;
+}
+
+#multimedia .slider-content {
+    padding: 15px;
+    background-image: linear-gradient(150deg, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4));
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
