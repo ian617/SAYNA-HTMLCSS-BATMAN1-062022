@@ -1,211 +1,224 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-@font-face {
-    font-family: 'rajdhani';
-    src: url(../Assets/Police/Rajdhani-Medium.ttf);
-}
-
-:root {
-    --yellow-color: #FFFF00;
-    --yellow-light: #F8F184;
-    --blue-color: #19587D;
-    --red-color: #b11313;
-    --black-light: #0d0e09;
-    --grey: #c4c4c4;
-    --black-color: #000;
-    --white-color: #fff;
-    --gradient-white: rgba(237, 222, 191, 0.4);
-    --grandient-red: rgba(137, 0, 8, 0.6);
-    --gradient-blue: #19587d;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* Pour enlever les marges et les padding par défaut 
+    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+    @font-face {
+        font-family: 'rajdhani';
+        src: url(../Assets/Police/Rajdhani-Medium.ttf);
+    }
+    
+     :root {
+        --yellow-color: #FFFF00;
+        --yellow-light: #F8F184;
+        --blue-color: #19587D;
+        --red-color: #b11313;
+        --black-light: #0d0e09;
+        --grey: #c4c4c4;
+        --black-color: #000;
+        --white-color: #fff;
+        --gradient-white: rgba(237, 222, 191, 0.4);
+        --grandient-red: rgba(137, 0, 8, 0.6);
+        --gradient-blue: #19587d;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* Pour enlever les marges et les padding par défaut 
     et ne pas compliquer mes calculs pour le positionnement des différents éléments */
-}
-
-h1 {
-    font-family: 'rajdhani';
-    font-size: 36px;
-    font-weight: 400;
-}
-
-button {
-    font-family: 'rajdhani';
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-body {
-    background-color: black;
-    color: white;
-    font-family: 'space grotesk';
-    font-weight: 300;
-}
-
-
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+    }
+    
+    h1 {
+        font-family: 'rajdhani';
+        font-size: 36px;
+        font-weight: 400;
+    }
+    
+    button {
+        font-family: 'rajdhani';
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    body {
+        background-color: black;
+        color: white;
+        font-family: 'space grotesk';
+        font-weight: 300;
+    }
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
                 Design de la navigation 
  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 50px;
-    padding-bottom: 250px;
-}
-
-ul {
-    list-style: none;
-}
-
-nav ul li a {
-    color: var(--white-color);
-    font-size: 30px;
-    font-weight: 500;
-    font-family: 'rajdhani';
-}
-
-ul a:hover {
-    color: var(--yellow-color);
-}
-
-
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+    
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 50px;
+        padding-bottom: 250px;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    nav ul li a {
+        color: var(--white-color);
+        font-size: 30px;
+        font-weight: 500;
+        font-family: 'rajdhani';
+    }
+    
+    ul a:hover {
+        color: var(--yellow-color);
+    }
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
                 Design de la partie hero header 
  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-#hero {
-    background-image: url(../Assets/Illustrations/Bathome1.png);
-    height: 800px;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-color: #19587D;
-    background-size: cover;
-}
-
-.content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    width: 60%;
-    /* L'élément va occuper 60% de l'écran et s'aligner à gauche */
-    margin: 0 auto;
-    /* Pour centrer l'élément */
-}
-
-
-/* Quand la classe "titre" a été ajouté au h2
+    
+    #hero {
+        background-image: url(../Assets/Illustrations/Bathome1.png);
+        height: 800px;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-color: #19587D;
+        background-size: cover;
+    }
+    
+    .content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width: 60%;
+        /* L'élément va occuper 60% de l'écran et s'aligner à gauche */
+        margin: 0 auto;
+        /* Pour centrer l'élément */
+    }
+    /* Quand la classe "titre" a été ajouté au h2
 #hero .titre {
     margin: 20px 0;
 } */
-
-#il_est_batman {
-    margin: 20px 0;
-    font-size: 25px;
-}
-
-.btn {
-    text-decoration: none;
-    color: var(--white-color);
-    font-size: 20px;
-    padding: 10px 30px;
-    margin: 20px;
-    background: linear-gradient( 80deg, var(--gradient-white), var(--grandient-red));
-    /* Ajout de dégradé.
+    
+    #il_est_batman {
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    
+    .btn {
+        text-decoration: none;
+        color: var(--white-color);
+        font-size: 20px;
+        padding: 10px 30px;
+        margin: 20px;
+        background: linear-gradient( 80deg, var(--gradient-white), var(--grandient-red));
+        /* Ajout de dégradé.
     Pour ajouter rapidement l'opacité, on peut aller vers les rgb (cf root en haut) */
-    box-shadow: var(--black-color) 5px 5px 60px;
-    /* 60px ici c'est le "blur" des ombres de 5px ajoutées */
-}
-
-#hero .flèche {
-    display: block;
-    /* Parce que le display est inline par défaut */
-    margin: 0 auto;
-    /* pour centrer l'élément */
-    margin-top: 290px;
-}
-
-.scroll {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    right: 50px;
-    /* Position de l'élément par rapport au côté droit */
-    top: 250px;
-}
-
-.scroll .social {
-    margin-top: 25px;
-}
-
-
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+        box-shadow: var(--black-color) 5px 5px 60px;
+        /* 60px ici c'est le "blur" des ombres de 5px ajoutées */
+    }
+    
+    #hero .flèche {
+        display: block;
+        /* Parce que le display est inline par défaut */
+        margin: 0 auto;
+        /* pour centrer l'élément */
+        margin-top: 290px;
+    }
+    
+    .scroll {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        right: 50px;
+        /* Position de l'élément par rapport au côté droit */
+        top: 250px;
+    }
+    
+    .scroll .social {
+        margin-top: 25px;
+    }
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
                 Design de la section batman-personnages 
  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-
-/* Dans webinar:
+    /* Dans webinar:
 #batman-cinema {
     margin-top: 40px;
 }  */
-
-.batman-personnage {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-/* Pour écrire le titre en majuscule
+    
+    .batman-personnage {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* Pour écrire le titre en majuscule
 #batman-cinema .titre {
     text-transform: uppercase;
 } */
-
-.titre {
-    text-transform: uppercase;
-    margin: 30px 0;
-}
-
-.description {
-    margin-bottom: 45px;
-    text-align: justify;
-    width: 80%;
-    /* largeur de 80% du conteneur */
-    font-size: 20px;
-}
-
-.acteurs {
-    text-align: center;
-}
-
-
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+    
+    .titre {
+        text-transform: uppercase;
+        margin: 30px 0;
+    }
+    
+    .description {
+        margin-bottom: 45px;
+        text-align: justify;
+        width: 80%;
+        /* largeur de 80% du conteneur */
+        font-size: 20px;
+    }
+    
+    .acteurs {
+        text-align: center;
+    }
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
                 Design de la partie multimédia
  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-#multimedia .slider-multimedia {
-    display: flex;
-    width: 60%;
-    margin: 40px auto;
-}
-
-#multimedia .slider-image {
-    width: 100%;
-}
-
-#multimedia .slider-content {
-    padding: 15px;
-    background-image: linear-gradient(150deg, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4));
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
+    
+    #multimedia .slider-multimedia {
+        display: flex;
+        width: 60%;
+        margin: 40px auto;
+    }
+    
+    #multimedia .slider-image {
+        width: 100%;
+    }
+    
+    #multimedia .slider-content {
+        padding: 15px;
+        background-image: linear-gradient(150deg, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4));
+        border-top-right-radius: 15px;
+        /* Pour arrondir les angles : border-radius: valeur 
+    [valeur en pixel] */
+        border-bottom-right-radius: 15px;
+    }
+    
+    #multimedia .slider-content .genre-film {
+        font-family: 'space grotesk';
+        font-size: 15px;
+        padding-bottom: 6px;
+    }
+    
+    #multimedia .slider-content .titre-film {
+        font-family: 'rajdhani';
+        font-weight: 'bold';
+        padding-bottom: 6px;
+    }
+    
+    #multimedia .slider-content .imdb {
+        font-family: 'space grotesk';
+        padding-bottom: 6px;
+    }
+    
+    #multimedia .slider-content .note-imdb {
+        color: var(--yellow-color);
+    }
+    
+    #multimedia .slider-content .descriptif-film {
+        font-family: 'space grotesk';
+    }
