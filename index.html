@@ -27,7 +27,8 @@
             <div class="container">
                 <div class="content">
                     <p class="texte">
-                        <span class="description">Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les criminels de Gotham City. Il est vengeur. Il est la nuit.</span>
+                        <span class="description">Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les criminels de Gotham City.
+                            <br>Il est vengeur. Il est la nuit.</span>
                     </p>
                     <h2 id="il_est_batman">Il est Batman.</h2>
                     <div class="cta">
@@ -219,30 +220,39 @@
         </section>
 
         <!--7e section : partie "PRENONS CONTACT"-->
-        <section>
-            <div class="container">
+        <section id="contact">
+            <div class="form">
                 <h1 class="titre">PRENONS CONTACT</h1>
                 <form action="">
-                    <label for="email">ADRESSE EMAIL</label><br>
-                    <input type="email" name="email" placeholder="Adresse email"><br>
-                    <label for="newletter">NEWSLETTER</label><br>
+                    <label class="nom-champ" for="email">ADRESSE EMAIL</label>
+                    <input type="email" name="email" placeholder="Adresse email">
+                    <label class="nom-champ" for="newletter">NEWSLETTER</label>
                     <label for="">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de
                         Batman :</label>
                     <input type="checkbox">
-                    <br>
+
                     <div>
                         <span>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span>
-                        <span>
+                        <span class="icon">
                             <img src="./Assets/Logos/icon_flèche_2.png" alt="">
                         </span>
                     </div>
                     <div>
-                        <p>Souhaitez-vous recevoir des news</p>
+                        <p class="news">Souhaitez-vous recevoir des news</p>
+                    </div>
+                    <div class="btn-group">
+                        <!--"radio" pour une seule option et "checkbox" pour les selections multiples-->
+                        <input type="radio" id="film">
+                        <label for="film">Des films</label>
+                        <input type="radio" id="comics">
+                        <label for="comics">Des comics</label>
+                        <input type="radio" id="tout">
+                        <label for="tout">De tout</label>
                     </div>
                     <a href="">Des films</a>
                     <a href="">Des comics</a>
                     <a href="">De tout</a>
-                    <p>MESSAGE</p>
+                    <p class="nom-champ">MESSAGE</p>
                     <textarea name="" id="" cols="30" placeholder="Laissez un commentaire pour la communauté"></textarea>
                     <input type="submit" value="CONFIRMER">
                 </form>
