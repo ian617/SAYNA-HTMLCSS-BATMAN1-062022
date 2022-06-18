@@ -49,11 +49,19 @@
         font-family: 'space grotesk';
         font-weight: 300;
     }
-    /* Ajout filtre jaune pour que l'image adopte une couleur jaune au survol de souris 
-    Vas sur le générateur de filtre https://angel-rs.github.io/css-color-filter-generator */
     
-    .filtre-jaune:hover {
-        filter: brightness(0) saturate(100%) invert(92%) sepia(93%) saturate(1083%) hue-rotate(360deg) brightness(110%) contrast(102%);
+    .bordure-top {
+        border-top: 4px solid rgba(188, 187, 189, 0.2);
+        position: relative;
+        top: 132px;
+        width: 85%;
+        left: 100px;
+    }
+    
+    .bordure-gauche {
+        border-top: 2px solid rgba(188, 187, 189, 0.2);
+        position: relative;
+        /* !!! CE STYLE NE S'APPLIQUE PAS, JE NE SAIS PAS POURQUOI !!! */
     }
     /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
                 Design de la navigation 
@@ -82,6 +90,12 @@
     .menu:hover {
         text-decoration: underline;
         font-weight: 700;
+    }
+    /* Ajout filtre jaune pour que l'image adopte une couleur jaune au survol de souris 
+    Vas sur le générateur de filtre https://angel-rs.github.io/css-color-filter-generator */
+    
+    .filtre-jaune:hover {
+        filter: brightness(0) saturate(100%) invert(92%) sepia(93%) saturate(1083%) hue-rotate(360deg) brightness(110%) contrast(102%);
     }
     /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
                 Design de la partie hero header 
@@ -354,4 +368,48 @@
         color: white;
         cursor: pointer;
         background-image: linear-gradient(90deg, rgba(13, 14, 9, 0.6), rgba(137, 0, 8, 0.8));
+    }
+    
+    #citations {
+        margin: 120px;
+    }
+    
+    #citations .citation-carte {
+        text-align: center;
+        width: 45%;
+        margin: 0 auto;
+    }
+    
+    #citations .citation-texte {
+        font-size: 15px;
+        font-weight: bolder;
+    }
+    
+    #citations .citation-auteur {
+        padding-top: 25px;
+        font-size: 12px;
+    }
+    
+    #citations .guillemet-close {
+        float: right;
+    }
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+                Design du footer
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    
+    footer {
+        margin-top: 230px;
+    }
+    
+    footer .texte-footer {
+        text-align: center;
+    }
+    
+    footer .social-footer {
+        text-align: center;
+        margin: 25px 0;
+    }
+    
+    footer .social-item {
+        padding: 15px;
     }
