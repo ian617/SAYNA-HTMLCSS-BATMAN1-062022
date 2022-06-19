@@ -59,9 +59,8 @@
     }
     
     .bordure-gauche {
-        border-top: 2px solid rgba(188, 187, 189, 0.2);
-        position: relative;
-        /* !!! CE STYLE NE S'APPLIQUE PAS, JE NE SAIS PAS POURQUOI !!! */
+        border-left: 4px solid rgba(188, 187, 189, 0.2);
+        /* /!\ Je n'arrive pas à ajouter les contours gauche et droite */
     }
     /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
                 Design de la navigation 
@@ -399,6 +398,7 @@
     
     footer {
         margin-top: 230px;
+        margin-bottom: 150px;
     }
     
     footer .texte-footer {
@@ -412,4 +412,5 @@
     
     footer .social-item {
         padding: 15px;
+        text-decoration: none;
     }
